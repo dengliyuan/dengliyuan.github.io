@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Liyuan Deng's Homepage</title>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: "Source Han Sans", "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .sidebar {
+      width: 140px;
+      background: #2c3e50;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+      left: 0;
+      top: 0;
+    }
+    .language-switcher {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .language-switcher h4 {
+      color: #ecf0f1;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .language-btn {
+      display: block;
+      width: 80px;
+      padding: 6px 8px;
+      margin: 4px auto;
+      background: #34495e;
+      color: #ecf0f1;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 4px;
+      font-size: 0.75em;
+      cursor: pointer;
+      border: none;
+    }
+    .language-btn:hover {
+      background: #3498db;
+      color: white;
+    }
+    .language-btn.active {
+      background: #e74c3c;
+      color: white;
+    }
+    .container {
+      width: calc(100% - 140px);
+      margin-left: 140px;
+      background: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #000080;
+      border-bottom: 2px solid #000080;
+      padding-bottom: 10px;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+    h2 {
+      color: #006400;
+      font-size: 1.2em;
+      margin-top: 30px;
+      border-bottom: 1px dashed #888;
+    }
+    h3 {
+        color: #8B0000;
+        font-size: 1.1em;
+        margin-top: 20px;
+        font-style: italic;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 2em;
+    }
+    ul li {
+      margin-left: 0;
+      padding-left: 0em;
+      margin-bottom: 0.5em;
+    }
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+      padding-left: 0;
+    }
+    ol li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 2em;
+      margin-bottom: 0.5em;
+    }
+    ol li::before {
+      content: "[" counter(item) "]";
+      position: absolute;
+      left: 0;
+    }
+    a {
+      color: #000080;
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="language-switcher">
+      <h4>Language</h4>
+      <a class="language-btn active" href="index_en.html">English</a>
+      <a class="language-btn" href="index_cn.html">中文</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Liyuan Deng's Homepage</h1>
+    <p>
+      <b>Liyuan Deng (邓立原)</b> <br>
+      Ph.D. Student <br>
+      Department of Control Science and Engineering, Tongji University, Shanghai, China <br>
+      Department of Computing, The Hong Kong Polytechnic University, Hong Kong, China <br>
+      Mail: PQ702, Mong Man Wai Building, 11 Yuk Choi Road, Hung Hom, KLN, Hong Kong <br>
+      Email: <a href="mailto:dengliyuan99@tongji.edu.cn">dengliyuan99@tongji.edu.cn</a> </br>
+    </p>
+    <h2>Biography</h2>
+    <p>
+      Liyuan Deng received the B.S. degree in Automation and the M.S. degree in Control Science and Engineering (supervised by <a href="https://cse.tongji.edu.cn/81/f4/c15580a295412/page.htm" target="_blank" style="text-decoration:none;">Prof. Li Li</a>) from Tongji University, Shanghai, China, in 2021 and 2024, respectively. He is currently pursuing the Ph.D. degree in Control Science and Engineering at the Department of Control Science and Engineering, Tongji University supervised by <a href="https://cse.tongji.edu.cn/fd/f8/c15580a196088/page.htm" target="_blank" style="text-decoration:none;">Prof. Jie Chen</a>, and the Dual Ph.D. degree at the Department of Computing, The Hong Kong Polytechnic University supervised by <a href="https://www4.comp.polyu.edu.hk/~csjcao/" target="_blank" style="text-decoration:none;">Prof. Jiannong Cao</a>.
+      His research interests include multi-agent systems, mobile computing, and deep reinforcement learning. <br>
+    </p>
+    <h2>Education</h2>
+    <ul>
+      <li>2017.9–2021.7, Tongji University, Automation, Bachelor of Science in Engineering</li>
+      <li>2021.7–2024.6, Tongji University, Control Science and Engineering, Master of Science in Engineering</li>
+      <li>2024.9–Present, Tongji University, Control Science and Engineering, Ph.D. Student</li>
+      <li>2025.9–Present, The Hong Kong Polytechnic University, Dual Ph.D. Student</li>
+    </ul>
+    <h2>Publications</h2>
+    <h3>Papers</h3>
+    <ol>
+      <li><b>L. Deng</b>, W. Gong, M. Liwang, L. Li, B. Zhang, and C. Li, "Towards intelligent mobile crowdsensing with task state information sharing over edge-assisted UAV networks," <i>IEEE Transactions on Vehicular Technology</i>, vol. 73, no. 8, pp. 11773–11788, Aug. 2024, doi: <a href="https://doi.org/10.1109/TVT.2024.3369089" target="_blank">10.1109/TVT.2024.3369089</a>.</li>
+      <li><b>L. Deng</b>, W. Gong, and L. Li, "Multi-robot exploration in unknown environments via multi-agent deep reinforcement learning," in <i>Proc. 2022 China Automation Congress (CAC)</i>, Xiamen, China, 2022, pp. 6898–6902, doi: <a href="https://doi.org/10.1109/CAC57257.2022.10055585" target="_blank">10.1109/CAC57257.2022.10055585</a>.</li>
+      <li>S. Lou, C. Wang, W. Gong, <b>L. Deng</b>, and L. Li, "Collaborative regional information collection strategy based on MLAT-DRL algorithm," <i>Acta Armamentarii</i>, vol. 45, no. 12, pp. 4423–4434, 2024, doi: <a href="https://doi.org/10.12382/bgxb.2023.1081" target="_blank">10.12382/bgxb.2023.1081</a>.</li>
+      <li>W. Gong, S. Lou, <b>L. Deng</b>, P. Yi, and Y. Hong, "Efficient multi-target localization using dynamic UAV clusters," <i>Sensors</i>, vol. 25, no. 9, Art. no. 2857, 2025, doi: <a href="https://doi.org/10.3390/s25092857" target="_blank">10.3390/s25092857</a>.</li>
+    </ol>
+    <h3>Patents</h3>
+    <ol>
+        <li>W. Gong, <b>L. Deng</b>, P. Yi, and Y. Hong. High-speed aircraft clustering method and device oriented to collaborative localization, ZL202411197800.7. (Granted)</li>
+        <li>W. Gong, <b>L. Deng</b>, L. Li, F. Chen, and S. Liang. Unmanned aerial vehicle task allocation method based on edge system and reinforcement learning, CN202311697752.3. (Published)</li>
+        <li>L. Li, <b>L. Deng</b>, F. Chen, W. Gong, and M. Liwang. A multi-robot collaborative area exploration intelligent decision-making method and device, CN202411196040.8. (Published)</li>
+        <li>L. Li, <b>L. Deng</b>, W. Gong, J. Xu, and M. Liwang. Ice crack detection method and device based on camera and LiDAR, CN202411412261.4. (Published)</li>
+        <li>W. Gong, <b>L. Deng</b>, L. Li, Q. Yu, and M. Liwang. Multi-UAV dynamic task allocation method based on edge system and data stream age, CN202510040851.7. (Published)</li>
+        <li>W. Gong, <b>L. Deng</b>, S. Lou, L. Li, and M. Liwang. Multi-UAV data collection task planning method and device considering communication interruption, CN202510216265.3. (Published)</li>
+        <li>W. Gong, <b>L. Deng</b>, L. Li, M. Liwang, X. Li, and M. Meng. Sustainable task planning method for multi-UAVs with communication constraints guided by edge systems, CN202510324331.9. (Published)</li>
+    </ol>
+    <h2>Research Projects</h2>
+    <ol>
+      <li>2025.6–2026.6, Dynamic Data Collection Task Planning for UAV Networks Assisted by Edge Systems, Shanghai “Intelligent Science and Technology” Category IV Peak Discipline “Interdisciplinary Innovation Science-Education Integration Fund”, Ongoing, Project Leader</li>
+    </ol>
+    <h2>Experiences</h2>
+    <h3>Teaching Assistant</h3>
+    <ul>
+      <li>COMP2012: Discrete Mathematics, PolyU, 2025/26 Sem 1, Instructor: Prof. Man Lung Yiu</li>
+      <li>EIE6475: Introduction to Artificial Intelligence, Tongji, 2024/25 Sem 1 & Sem 2, Instructor: Prof. Zhuping Wang</li>
+      <li>EIE8432: System Analysis and Optimization, Tongji, 2021/22 Sem 1, Instructor: Prof. Li Li & Prof. Xiaoming Hu (KTH)</li>
+      <li>EIE4611: Comprehensive Design and Practice C, Tongji, 2022/23 Sem 2, 2023/24 Sem 2, 2024/25 Sem 1, Instructor: Dr. Wei Gong</li>
+      <li>EIE2606: Python AI Programming Practice, Tongji, 2023/24 Sem 2, 2024/25 Sem 2, Instructor: Dr. Wei Gong</li>
+      <li>EIE3537: Big Data and Data Engineering, Tongji, 2023/24 Sem 2, 2024/25 Sem 2, Instructor: Dr. Wei Gong</li>
+      <li>WF50002440001: C/C++ Programming, Tongji, 2024/25 Sem 1, Instructor: Dr. Wei Gong</li>
+    </ul>
+    <h3>On-Campus Employment</h3>
+    <ul>
+      <li>2021.9–2026.2, Assistant for STIHL Fund Chair (Prof. Li Li), Tongji CDHK</li>
+      <li>2024.9–2025.6, Assistant for Graduate Student Affairs Office, Tongji CEIE</li>
+    </ul>
+
+    <div class="footer">
+      &copy; Liyuan Deng // Last updated: 11 OCT 2025
+    </div>
+  </div>
+</body>
+</html>

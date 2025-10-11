@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>邓立原个人主页</title>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: "Source Han Sans", "PingFang SC", Arial, "Microsoft YaHei", sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .sidebar {
+      width: 140px;
+      background: #2c3e50;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+      left: 0;
+      top: 0;
+    }
+    .language-switcher {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .language-switcher h4 {
+      color: #ecf0f1;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .language-btn {
+      display: block;
+      width: 80px;
+      padding: 6px 8px;
+      margin: 4px auto;
+      background: #34495e;
+      color: #ecf0f1;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 4px;
+      font-size: 0.75em;
+      cursor: pointer;
+      border: none;
+    }
+    .language-btn:hover {
+      background: #3498db;
+      color: white;
+    }
+    .language-btn.active {
+      background: #e74c3c;
+      color: white;
+    }
+    .container {
+      width: calc(100% - 140px);
+      margin-left: 140px;
+      background: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #000080;
+      border-bottom: 2px solid #000080;
+      padding-bottom: 10px;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+    h2 {
+      color: #006400;
+      font-size: 1.2em;
+      margin-top: 30px;
+      border-bottom: 1px dashed #888;
+    }
+    h3 {
+        color: #8B0000;
+        font-size: 1.1em;
+        margin-top: 20px;
+        font-style: italic;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 2em;
+    }
+    ul li {
+      margin-left: 0;
+      padding-left: 0em;
+      margin-bottom: 0.5em;
+    }
+    ol {
+      list-style-type: none;
+      counter-reset: item;
+      padding-left: 0;
+    }
+    ol li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 2em;
+      margin-bottom: 0.5em;
+    }
+    ol li::before {
+      content: "[" counter(item) "]";
+      position: absolute;
+      left: 0;
+    }
+    a {
+      color: #000080;
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="language-switcher">
+      <h4>Language</h4>
+      <a class="language-btn" href="index_en.html">English</a>
+      <a class="language-btn active" href="index_cn.html">中文</a>
+    </div>
+  </div>
+
+  <div class="container">
+<h1>邓立原个人主页</h1>
+      <p>
+        <b>邓立原</b> <br>
+        博士研究生 <br>
+        同济大学控制科学与工程系 <br>
+        香港理工大学电子计算学系 <br>
+        通讯地址：香港九龙红磡育才道11号蒙民伟楼PQ702室 <br>
+        电子邮箱: <a href="mailto:dengliyuan99@tongji.edu.cn">dengliyuan99@tongji.edu.cn</a> </br>
+      </p>
+      <h2>个人简介</h2>
+    <p>
+      邓立原于2021年毕业于同济大学自动化专业，获工学学士学位；2024年毕业于同济大学控制科学与工程专业，获工学硕士学位（导师：<a href="https://cse.tongji.edu.cn/81/f4/c15580a295412/page.htm" target="_blank" style="text-decoration:none;">李莉教授</a>）。现为同济大学控制科学与工程系博士研究生（导师：<a href="https://cse.tongji.edu.cn/fd/f8/c15580a196088/page.htm" target="_blank" style="text-decoration:none;">陈杰教授</a>），同时在香港理工大学电子计算学系攻读双博士学位（导师：<a href="https://www4.comp.polyu.edu.hk/~csjcao/" target="_blank" style="text-decoration:none;">曹建农教授</a>）。主要研究方向为多智能体系统、移动计算与深度强化学习。<br>
+      </p>
+      <h2>教育经历</h2>
+      <ul>
+        <li>2017.9–2021.7，同济大学，自动化专业，工学学士</li>
+        <li>2021.7–2024.6，同济大学，控制科学与工程专业，工学硕士</li>
+        <li>2024.9–至今，同济大学，控制科学与工程专业，博士研究生</li>
+        <li>2025.9–至今，香港理工大学，电子计算学系，博士研究生</li>
+      </ul>
+      <h2>出版物</h2>
+      <h3>学术论文</h3>
+      <ol>
+        <li><b>Deng L</b>, Gong W, Li W, Li L, Zhang B, Li C. Task state information sharing for intelligent mobile crowdsensing in edge-assisted UAV networks[J]. IEEE Transactions on Vehicular Technology, 2024, 73(8): 11773–11788. DOI: <a href="https://doi.org/10.1109/TVT.2024.3369089" target="_blank">10.1109/TVT.2024.3369089</a>.</li>
+        <li><b>Deng L</b>, Gong W, Li L. Multi-robot exploration in unknown environments based on multi-agent deep reinforcement learning[C]//Proceedings of the 2022 Chinese Automation Congress, Xiamen, China, 2022: 6898–6902. DOI: <a href="https://doi.org/10.1109/CAC57257.2022.10055585" target="_blank">10.1109/CAC57257.2022.10055585</a>.</li>
+        <li>娄抒瀚, 王冲冲, 龚炜, <b>邓立原</b>, 李莉. 基于MLAT-DRL算法的协同区域信息采集策略[J]. 兵工学报, 2024, 45(12): 4423–4434. DOI: <a href="https://doi.org/10.12382/bgxb.2023.1081" target="_blank">10.12382/bgxb.2023.1081</a>.</li>
+        <li>Gong W, Lou S, <b>Deng L</b>, Yi P, Hong Y. Efficient multi-target localization using dynamic UAV swarms[J]. Sensors, 2025, 25(9): 2857. DOI: <a href="https://doi.org/10.3390/s25092857" target="_blank">10.3390/s25092857</a>.</li>
+      </ol>
+      <h3>专利</h3>
+      <ol>
+        <li>龚炜, <b>邓立原</b>, 衣鹏, 洪奕光. 一种面向协同感知定位的高速飞行器分簇方法以及装置, ZL202411197800.7. (授权)</li>
+        <li>龚炜, <b>邓立原</b>, 李莉, 陈斐斐, 梁舒. 一种基于边缘系统和强化学习的无人机任务分配方法, CN202311697752.3. (公开)</li>
+        <li>李莉, <b>邓立原</b>, 陈斐斐, 龚炜, 李王明卉. 一种多机器人协同区域探索智能决策方法以及装置, CN202411196040.8. (公开)</li>
+        <li>李莉, <b>邓立原</b>, 龚炜, 许佳, 李王明卉. 一种基于相机和激光雷达的冰缝检测方法以及装置, CN202411412261.4. (公开)</li>
+        <li>龚炜, <b>邓立原</b>, 李莉, 于青云, 李王明卉. 基于边缘系统和数据流年龄的多无人机动态任务分配方法, CN202510040851.7. (公开)</li>
+        <li>龚炜, <b>邓立原</b>, 娄抒瀚, 李莉, 李王明卉. 考虑通信中断的多无人机数据采集任务规划方法及装置, CN202510216265.3. (公开)</li>
+        <li>龚炜, <b>邓立原</b>, 李莉, 李王明卉, 李修贤, 孟敏. 边缘系统引导的通信受限多无人机可持续任务规划方法, CN202510324331.9. (公开)</li>
+      </ol>
+      <h2>科研项目</h2>
+      <ol>
+        <li>2025.6–2026.6, 边缘系统辅助的无人机网络动态数据采集任务规划，上海市“智能科学与技术”IV类高峰学科“交叉创新科教融合基金”，在研，主持</li>
+      </ol>
+      <h2>实践服务</h2>
+      <h3>助教</h3>
+      <ul>
+        <li>COMP2012: 离散数学, 香港理工大学, 2025/26第一学期, 授课教师: Man Lung Yiu</li>
+        <li>EIE6475: 人工智能导论, 同济大学, 2024/25第一、二学期, 授课教师: 王祝萍</li>
+        <li>EIE2606: Python人工智能程序设计实践, 同济大学, 2023/24第二学期, 2024/25第二学期, 授课教师: 龚炜</li>
+        <li>EIE3537: 大数据与数据工程, 同济大学, 2023/24第二学期, 2024/25第二学期, 授课教师: 龚炜</li>
+        <li>EIE4611: 综合设计与实践C, 同济大学, 2022/23第二学期, 2023/24第二学期, 2024/25第一学期, 授课教师: 龚炜</li>
+        <li>WF50002440001: C/C++程序设计, 同济大学, 2024/25第一学期, 授课教师: 龚炜</li>
+        <li>EIE8432: 系统分析与优化, 同济大学, 2021/22第一学期, 授课教师: 李莉、胡晓明(KTH)</li>
+      </ul>
+      <h3>助管</h3>
+      <ul>
+        <li>2021.9–2026.2, STIHL基金教席（李莉教授）助理, 同济大学中德学院</li>
+        <li>2024.9–2025.6, 研究生工作办公室助管, 同济大学电子与信息工程学院</li>
+      </ul>
+
+    <div class="footer">
+      更新于2025年10月11日
+    </div>
+  </div>
+</body>
+</html>
