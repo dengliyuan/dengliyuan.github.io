@@ -10,54 +10,31 @@
       color: #222;
       margin: 0;
       padding: 0;
-      display: flex;
     }
-    .sidebar {
-      width: 140px;
-      background: #2c3e50;
-      padding: 20px 10px;
-      box-sizing: border-box;
+    .language-top {
       position: fixed;
-      height: 100vh;
-      overflow-y: auto;
-      left: 0;
-      top: 0;
-    }
-    .language-switcher {
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .language-switcher h4 {
-      color: #ecf0f1;
+      top: 10px;
+      right: 15px;
+      z-index: 10;
       font-size: 0.9em;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-    .language-btn {
-      display: block;
-      width: 80px;
-      padding: 6px 8px;
-      margin: 4px auto;
-      background: #34495e;
-      color: #ecf0f1;
-      text-decoration: none;
-      text-align: center;
+      background: #fff;
+      padding: 4px 8px;
       border-radius: 4px;
-      font-size: 0.75em;
-      cursor: pointer;
-      border: none;
     }
-    .language-btn:hover {
-      background: #3498db;
-      color: white;
+    .language-top a {
+      color: #000080;
+      text-decoration: none;
+      margin: 0 3px;
     }
-    .language-btn.active {
-      background: #e74c3c;
-      color: white;
+    .language-top a:hover {
+      text-decoration: underline;
+    }
+    .language-top .active {
+      font-weight: bold;
+      text-decoration: underline;
     }
     .container {
-      width: calc(100% - 140px);
-      margin-left: 140px;
+      width: 100%;
       background: #fff;
       padding: 20px;
       box-sizing: border-box;
@@ -120,12 +97,9 @@
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <div class="language-switcher">
-      <h4>Language</h4>
-      <a class="language-btn active" href="index_en.html">English</a>
-      <a class="language-btn" href="index_cn.html">中文</a>
-    </div>
+  <div class="language-top">
+    <a href="index_cn.html">[中文]</a>
+    <a class="active" href="index_en.html">[English]</a>
   </div>
 
   <div class="container">
